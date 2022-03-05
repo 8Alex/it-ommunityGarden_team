@@ -1,0 +1,217 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container_inner {
+    height: 900px;
+}
+
+.seasoncapsules {
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    line-height: 39.2px;
+}
+
+.photoContainer {
+    display: flex;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+figure a img {
+    width: 260px;
+    height: 405px;
+    transition: 1s;
+}
+
+figure a img:hover {
+    transform: scale(1.2);
+}
+
+.fullCollection {
+    position: relative;
+    cursor: pointer;
+    width: 750px;
+    height: 590px;
+    background-image: url(../images/prada.jfif);
+    background-repeat: no-repeat;
+}
+
+
+.coll {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    top: 200px;
+    left: 20px;
+}
+
+.catalog {
+    position: absolute;
+    color: #fff;
+    top: 250px;
+    left: 20px;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+
+.videoSection {
+    margin-bottom: 50px;
+}
+
+.videoSection__YouTube iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 850px;
+}
+
+.videoSection__text {
+    text-align: center;
+}
+
+.gallerySection {
+    width: 960px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.gallerySection__photos img {
+    width: 100%;
+    height: 640px;
+    display: none;
+}
+
+.gallerySection__photos img:first-child {
+    display: block;
+}
+
+.buttons {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid white;
+    margin-right: 10px;
+}
+
+.next {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid white;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(350px, 1fr));
+    justify-items: center;
+    gap: 90px;
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
+.item {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.blockcategory {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.category {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+#email-label {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+#email {
+    width: 120px;
+    height: 32px;
+    padding: 5px 0px 5px 10px;
+    border: 0px;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#submit {
+    width: 140px;
+    height: 43px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #FFFFFF;
+    background-color: #0F0F0F;
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .block1 {
+        display: none;
+    }
+
+    .item {
+        margin: 10vh 5vw 10vh 5vw;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    #email {
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+} */
