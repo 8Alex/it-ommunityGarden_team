@@ -1,5 +1,92 @@
+@font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/PT_Sans/PTSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+.head_content_container_top {
+    font-family: 'PTSans';
+    font-size: 12px;
+    max-width: 987px;
+    color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 14px 0;
+}
+
+.head_content_container_top .contacts {
+    color: gray;
+}
+
+.head_content_container_top .contacts .text {
+    color: gray;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.head_content_container_top .contacts .call {
+    padding-right: 1px;
+}
+
+.head_content_container_top .auth {
+    text-align: right;
+}
+
+.head_content_container {
+    font-family: 'PTSans';
+    max-width: 987px;
+    margin: 0 auto;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 310px auto 100px;
+
+}
+
+.head_content_container .title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.head_content_container .options {
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 31px 40px 31px 0;
+    text-align: right;
+}
+
+.head_content_container .options a {
+    color: gray;
+    text-decoration: none;
+}
+
+.head_content_container .options .text {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.head_content_container .icons {
+    padding: 27px 0;
+    padding-left: 0px;
+}
+
+.head_content_container .icons .icons2 {
+    padding-left: 40px;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PTSans';
     background-color: black;
     color: white;
 }
@@ -43,7 +130,6 @@ figure a img:hover {
     background-repeat: no-repeat;
 }
 
-
 .coll {
     position: absolute;
     color: #fff;
@@ -61,7 +147,6 @@ figure a img:hover {
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
 }
-
 
 .videoSection {
     margin-bottom: 50px;
@@ -188,7 +273,7 @@ figure a img:hover {
     background-color: #0F0F0F;
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer {
         grid-template-columns: 1fr 1fr;
     }
@@ -214,4 +299,4 @@ figure a img:hover {
     .footer {
         display: none;
     }
-} */
+}
